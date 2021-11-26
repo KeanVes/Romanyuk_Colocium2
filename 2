@@ -7,11 +7,11 @@ int main(void)
 {
     int word = 1;
     string text = get_string("текст: ");
-    for (int n = 0; n < strlen(текст); n++)
+    for (int n = 0; n < strlen(text); n++)
     {
          if (text[n] == 32)
         {
-            for (int m = n; m < strlen(текст); m++)
+            for (int m = n; m < strlen(text); m++)
             {
                 if (text[n+1] == 32)
                 {
