@@ -7,22 +7,22 @@ int main(void)
  int n;
  do
     {
-        n = get_int("Amount of numbers: ");
+        n = get_int("Кількість чисел: ");
     }
     while ((n > 100) || (n < 1));
  int a[n];
- for (int i = 0; i < n; i++)
+ for (int m = 0; m < n; m++)
  {
-  a[i] = get_int("Enter number %i: ", (i+1));
-  if ((a[i] <= -100) || (a[i] > 100))
+  a[m] = get_int("Введіть число %m: ", (m+1));
+  if ((a[m] <= -100) || (a[m] > 100))
   {
-   printf("Numbers must be from 1 to 100\n");
-   i--;
+   printf("Числа повинні бути від 1 до 100\n");
+   m--;
   }
  }
- for (int i = n-1; i >= 0; i--)
+ for (int m = n-1; m >= 0; m--)
  {
-  printf("%i ", a[i]);
+  printf("%m ", a[m]);
  }
  printf("\n");
 }
